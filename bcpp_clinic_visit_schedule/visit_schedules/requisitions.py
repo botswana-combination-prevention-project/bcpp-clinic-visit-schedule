@@ -11,8 +11,8 @@ app_label = 'bcpp_clinic_subject'
 requisitions = FormsCollection(
     Requisition(
         show_order=10, model=f'{app_label}.subjectrequisition',
-        panel=rdb_panel, required=False, additional=False),
+        panel=rdb_panel, required=True, additional=False),
     Requisition(
         show_order=20, model=f'{app_label}.subjectrequisition',
-        panel=viral_load_panel, required=True, additional=False),
+        panel=viral_load_panel, additional=False),
 )
